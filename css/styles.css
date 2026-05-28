@@ -282,7 +282,7 @@ a:hover {
 
 @media (max-width: 768px) {
     .nav-desktop,
-    .btn.btn-secondary {
+    .header-content > .btn.btn-secondary {
         display: none;
     }
 
