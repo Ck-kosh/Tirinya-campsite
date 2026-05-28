@@ -347,7 +347,7 @@
             <div id="paymentInstructions" class="payment-instructions hidden"></div>
             <div class="payment-instructions">
                 <strong>Event schedule:</strong>
-                <p id="eventScheduleText">June 07, 2026 • 10:00 AM - 8:00 PM • Tirinya Festival Grounds</p>
+                <p id="eventScheduleText">June 07, 2026 • 10:00 AM - 8:00 PM • Tirinya Resort Grounds</p>
             </div>
 
             <div id="qrPanel" class="qr-panel hidden">
@@ -456,17 +456,8 @@
             return `TIRINYA-${Date.now()}-${Math.floor(Math.random() * 900 + 100)}`;
         }
 
-        function getEventExpiry(eventName) {
-            const expiryMap = {
-                'Sotet First Edition': new Date('2026-06-08T00:00:00'),
-                'Future Event Slot': new Date('2026-06-08T00:00:00'),
-                'Community Adventure Day': new Date('2026-06-08T00:00:00')
-            };
-            return expiryMap[eventName] || new Date(Date.now() + 30 * 60000);
-        }
-
         function createPaymentPayload(eventName, ticketType, quantity, total, name, email, phone, reference) {
-            const expires = getEventExpiry(eventName);
+            const expires = new Date(Date.now() + 30 * 60000);
             return `Tirinya Campsite ticket payment\nEvent: ${eventName}\nTicket type: ${ticketType}\nQuantity: ${quantity}\nTotal: KES ${total}\nBuyer: ${name}\nEmail: ${email}\nSafaricom: ${phone}\nReference: ${reference}\nExpires: ${expires.toLocaleString()}`;
         }
 
