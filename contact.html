@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Tirinya Campsite</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <i class="fas fa-heart"></i>
+        <span>Eco-Friendly Wilderness Retreat on the Shores of Naivasha</span>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-campground"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Tirinya</h1>
+                        <p>Campsite</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                  <a href="index.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="conversation.html" class="nav-link">Inquire & Chat</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <a href="conversation.html" class="btn btn-secondary">Book / Inquire</a>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileMenu">
+                <a href="index.html" class="nav-link-mobile">Home</a>
+                <a href="about.html" class="nav-link-mobile">About Us</a>
+                <a href="conversation.html" class="nav-link-mobile">Inquire & Chat</a>
+                <a href="contact.html" class="nav-link-mobile">Contact Us</a>
+                <a href="events.html" class="nav-link-mobile">Events</a>
+                <a href="conversation.html" class="btn btn-secondary" style="width: 100%; text-align: center;">Book A Spot Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <span class="section-subtitle">Get in Touch</span>
+            <h1>We'd Love to Hear From You</h1>
+            <p>Have questions about camping spots, banda availability, or dining? Reach out using the form below, or contact our camp guides directly.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Left Column: Contact Info -->
+                <div class="contact-info">
+                    <span class="section-subtitle">Our Location & Info</span>
+                    <h2>Tirinya Wilderness Camp</h2>
+                    <p>Tirinya Campsite is located along Iten-Tambach Road. We are a comfortable 10 Minutes drive from Iten Town, making us the perfect weekend escape.</p>
+
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-pin"></i>
+                            </div>
+                            <div>
+                                <h4>Our Address</h4>
+                                <p>Iten, Kenya</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Call & WhatsApp</h4>
+                                <p>+254 769 021 360</p>
+                                <small>Available daily from 8:00 AM to 8:00 PM</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email Inquiry</h4>
+                                <p>tirinyacampsiteiten@gmail.com/p>
+                                <small>We reply within 12-24 hours</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <span class="section-subtitle">Inquiry Form</span>
+                        <h3>Send Us a Direct Message</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="Elias Cheuiyot" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="tirinya@gmail.com.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="Booking Inquiry">Camping / Accommodation Booking</option>
+                                <option value="Restaurant Booking">Restaurant & Dining Table</option>
+                                <option value="Events & Parties">Group Retreats & Events</option>
+                                <option value="General Question">General Inquiry / Question</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your planned arrival dates, number of guests, or any special requests..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-secondary" style="width: 100%;">
+                            <span>Submit Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <div class="form-message" id="formMessage" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-campground"></i>
+                        <span>Tirinya</span>
+                    </div>
+                    <p>An eco-friendly rustic haven designed for adventure seekers, families, and nature lovers on the banks of Naivasha. Connect with wilderness, comfort, and heritage.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="conversation.html">Inquire & Chat</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-map-pin"></i>
+                            <span>Iten, Kenya</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+254 769 021 360</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>tirinyacampsiteiten@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Opening Hours -->
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <ul class="hours-list">
+                        <li>
+                            <strong>Campsite & Accommodation</strong>
+                            <p>Open 24/7, Year-round</p>
+                        </li>
+                        <li>
+                            <strong>Restaurant & Bar</strong>
+                            <p>Curently closed</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Tirinya Campsite. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sustainability Code</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
